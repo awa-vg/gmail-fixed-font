@@ -1,0 +1,19 @@
+{
+    "name": "Gmail Fixed Font",
+    "description": "Use monospace font for Gmail.",
+    "version": "1.50",
+    "permissions": [
+        "https://mail.google.com/*",
+        "https://*.mail.google.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://mail.google.com/*",
+                "https://*.mail.google.com/*"
+            ],
+            "js": ["gmail-fixed-font.user.js"]
+        }
+    ],
+    "manifest_version": 2
+}
